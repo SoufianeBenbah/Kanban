@@ -1,0 +1,21 @@
+<div class="container">
+<h2>Developers</h2>
+<table class="table table-borderless">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let developer of developers | async">
+    <tr>
+      <td>{{developer.id}}</td>
+      <td>{{developer.firstname}}</td>
+      <td>{{developer.lastname}}</td>
+      <td>{{developer.email}}</td>
+    </tr>
+  </tbody>
+</table>
+</div>
